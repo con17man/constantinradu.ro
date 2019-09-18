@@ -1,6 +1,10 @@
 <template>
   <section class="header">
-    <span>This is the header Component...</span>
+    <div id="nav">
+      <router-link to="/">Home</router-link>|
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view />
   </section>
 </template>
 
@@ -12,8 +16,5 @@ export default class Header extends Vue {}
 </script>
 
 <style scoped lang="scss">
-.header {
-  display: flex;
-  flex-flow: row nowrap;
-}
+@import "../styles/components/header.scss";
 </style>

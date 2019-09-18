@@ -1,11 +1,6 @@
 <template>
   <div id="app">
     <Header></Header>
-    <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
   </div>
 </template>
 
@@ -22,12 +17,8 @@ export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-@import '@/assets/styles/_variables';
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: $red;
+* {
+  margin: 0;
+  padding: 0;
 }
 </style>
