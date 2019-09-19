@@ -1,5 +1,21 @@
 .header {
   display: flex;
   flex-flow: row nowrap;
-  background: $white;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 0.2em 1em 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+
+  .header--logo {
+    display: block;
+    position: relative;
+
+    img {
+      height: 50px;
+      cursor: pointer;
+    }
+  }
 }
